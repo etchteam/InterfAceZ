@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title @text="title">Interfacez</title>
+    <meta name="description" :content="description">
+
+    <!---
+      @TODO: Favicon
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="manifest" href="/assets/icons/site.webmanifest">
+      <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#0066ff">
+      <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+    -->
+
+    <!---
+      @TODO: Share cards
+
+      <meta property="og:url" content="https://diamond.etch.co"/>
+      <meta property="og:site_name" content="Diamond UI"/>
+      <meta property="og:title" :content="title"/>
+      <meta property="og:description" :content="description"/>
+      
+      <meta property="og:image" content="https://diamond.etch.co/assets/images/share-cards/large.png"/>
+      <meta property="og:image:type" content="image/png"/>
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
+      <meta property="og:image:alt" content="Diamond UI - Bring clarity to your components"/>
+      
+      <meta property="og:image" content="https://diamond.etch.co/assets/images/share-cards/medium.png"/>
+      <meta property="og:image:type" content="image/png"/>
+      <meta property="og:image:width" content="600"/>
+      <meta property="og:image:height" content="314"/>
+      <meta property="og:image:alt" content="Diamond UI - Bring clarity to your components"/>
+      
+      <meta property="og:image" content="https://diamond.etch.co/assets/images/share-cards/small.png"/>
+      <meta property="og:image:type" content="image/png"/>
+      <meta property="og:image:width" content="400"/>
+      <meta property="og:image:height" content="400"/>
+      <meta property="og:image:alt" content="Diamond UI - Bring clarity to your components"/>
+      
+      <meta name="twitter:card" content="summary"/>
+      <meta name="twitter:site" content="@etch"/>
+      <meta name="twitter:creator" content="@etch"/>
+    --->
+
+    <!---
+      @TODO: Bundled base styles?
+      <link rel="stylesheet" href="../styles/reset.css" webc:bucket="styles">
+      <link rel="stylesheet" href="../styles/base.css" webc:bucket="styles">
+      <link rel="stylesheet" :href="getBundleFileUrl('css', 'styles')" webc:keep>
+    --->
+
+    <!--- Bundled 11ty:webc component styles --->
+    <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep>
+
+    <!---
+      @TODO: Add umami
+      <script
+        webc:if="process.env.NODE_ENV === 'production'"
+        src="https://eu.umami.is/script.js"
+        data-website-id=""
+        defer
+        webc:keep
+      ></script>
+    --->
+  </head>
+  <body>
+    <header>
+      <a href="/">InterfAceZ</a>
+    </header>
+
+    <main @raw="content"></main>
+
+    <!--- Bundled 11ty:webc component scripts --->
+    <script :src="getBundleFileUrl('js')" webc:keep></script>
+  </body>
+</html>

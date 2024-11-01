@@ -1,0 +1,9 @@
+---
+layout: default.webc
+---
+
+<ul>
+  <li webc:for="component of $data.collections.component">
+    <a :href="component.url" @text="component.data.title"></a>
+  </li>
+</ul>

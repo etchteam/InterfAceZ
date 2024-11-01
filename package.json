@@ -1,0 +1,27 @@
+{
+  "name": "interfacez",
+  "version": "0.0.0",
+  "description": "A - Z of interfaces – recommendations, styles and web components to help create better interfaces.",
+  "author": "etchteam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etchteam/interfacez.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "install": "^0.13.0",
+    "npm": "^10.9.0"
+  }
+}
